@@ -31,7 +31,7 @@ function App() {
           </button>
          </div>
           <div className="aboutus_container">
-          <AboutUs/>
+         <AboutUs onContinueShopping={handleGetStartedClick}/>
           </div>
           </div>
 

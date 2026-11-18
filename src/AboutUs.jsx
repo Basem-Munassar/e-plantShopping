@@ -1,9 +1,9 @@
 import React from 'react';
 import './AboutUs.css';
 
-function AboutUs() {
+function AboutUs({ onContinueShopping }) {
   const handleContinueShopping = () => {
-    // Logic for continuing shopping
+    onContinueShopping();
   };
 
   return (
