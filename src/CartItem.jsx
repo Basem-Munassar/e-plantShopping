@@ -119,15 +119,6 @@ const CartItem = ({ onContinueShopping }) => {
           Checkout
         </button>
       </div>
-      <div className="product-list">
-        <div className="product-card">
-          <img className="product-image" />
-          <div className="product-title"></div>
-          <div className="product-description"></div>
-          <div className="product-cost"></div>
-          <button className="product-button">Add to Cart</button>
-        </div>
-      </div>
     </div>
   );
 };
