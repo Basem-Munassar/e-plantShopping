@@ -2,6 +2,10 @@ import React from 'react';
 import './AboutUs.css';
 
 function AboutUs() {
+  const handleContinueShopping = () => {
+    // Logic for continuing shopping
+  };
+
   return (
     <div className="about-us-container">
       {/* <h1 className="about-us-heading">About Us</h1> */}
@@ -25,6 +29,13 @@ function AboutUs() {
         Join us in our mission to create a greener, healthier world. Visit Paradise Nursery today and experience the 
         beauty of nature right at your doorstep.
       </p>
+      <button
+        type="button"
+        className="get-started-button"
+        onClick={handleContinueShopping}
+      >
+        Continue Shopping
+      </button>
     </div>
   );
 }
