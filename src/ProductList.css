@@ -47,6 +47,11 @@ body {
     align-items: center;
     justify-content: center;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +89,16 @@ body {
 .product-title {
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.plant-description {
+    min-height: 40px;
+    margin: 10px 0;
+}
+
+.product-cost {
+    margin: 10px 0;
+    font-weight: bold;
 }
 
 .product-price {

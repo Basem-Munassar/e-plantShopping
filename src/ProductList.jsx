@@ -348,9 +348,9 @@ function ProductList({ onHomeClick }) {
                     d="M42.3,72H221.7l-26.4,92.4A15.9,15.9,0,0,1,179.9,176H84.1a15.9,15.9,0,0,1-15.4-11.6L32.5,37.8A8,8,0,0,0,24.8,32H8"
                     fill="none"
                     stroke="#faf9f9"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     id="mainIconPathAttribute"
                   ></path>
                 </svg>
@@ -364,19 +364,19 @@ function ProductList({ onHomeClick }) {
           {plantsArray.map((category, index) => (
             <div key={index}>
               <h2>{category.category}</h2>
-              <div className="plants-container">
+              <div className="product-list">
                 {category.plants.map((plant, plantIndex) => (
-                  <div key={plantIndex} className="plant-card">
+                  <div key={plantIndex} className="product-card">
                     <img
-                      className="plant-image"
+                      className="product-image"
                       src={plant.image}
                       alt={plant.name}
                     />
-                    <div className="plant-title">{plant.name}</div>
+                    <div className="product-title">{plant.name}</div>
                     <div className="plant-description">{plant.description}</div>
-                    <div className="plant-cost">{plant.cost}</div>
+                    <div className="product-cost">{plant.cost}</div>
                     <button
-                      className="add-to-cart-button"
+                      className="product-button"
                       onClick={() => handleAddToCart(plant)}
                       disabled={addedItemsToCart[plant.name]} // Disable button if the plant is already added to the cart
                     >
